@@ -1,0 +1,288 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  header {
+    height: 55px;
+
+    .mainTitle {
+      font-size: 32px;
+      top: 8px;
+    }
+  }
+
+  .addToDoArea {
+    width: 600px;
+    grid-gap: 20px;
+    padding: 10px 10px;
+
+    .inputWrapper input {
+      height: 35px;
+      font-size: 13px;
+    }
+
+    .buttonWrapper button {
+      height: 39px;
+      font-size: 12px;
+      letter-spacing: 3px;
+      padding-left: 14px;
+    }
+
+    .buttonWrapper button:hover {
+      font-size: 10px;
+      border: 5px solid black;
+    }
+
+    .buttonWrapper button:active {
+      font-size: 7px;
+    }
+  }
+
+  .tasksArea {
+    margin-top: 35px;
+
+    .title {
+      font-size: 17px;
+    }
+
+    .toDoItem {
+      width: 620px;
+      height: 60px;
+
+      .checkboxCompleteTask {
+        .checkbox-other .customCheckbox {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .taskDescription {
+        font-size: 16px;
+      }
+
+      .btnDelete {
+        font-size: 12px;
+        letter-spacing: 1.7px;
+      }
+
+      .btnDelete:active {
+        font-size: 9px;
+      }
+    }
+
+    .toDoItem.checked {
+      margin-left: 10px;
+      width: 600px;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  header {
+    height: 45px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .15);
+
+    .mainTitle {
+      font-size: 25px;
+      top: 10px;
+    }
+  }
+
+  .addToDoArea {
+    width: 430px;
+    grid-gap: 20px;
+    padding: 10px 10px;
+    box-shadow: 7px 6px 12px rgba(0, 0, 0, .15), 0 8px 24px rgba(0, 0, 0, .15);
+
+    .inputWrapper input {
+      height: 31px;
+      font-size: 11px;
+    }
+
+    .buttonWrapper button {
+      height: 34px;
+      font-size: 9px;
+      letter-spacing: 2px;
+      padding-left: 8px;
+    }
+
+    .buttonWrapper button:hover {
+      font-size: 8px;
+      letter-spacing: 1.7px;
+      border: 1px solid black;
+    }
+
+    .buttonWrapper button:active {
+      font-size: 5px;
+    }
+  }
+
+  .tasksArea {
+    margin-top: 20px;
+
+    .title {
+      font-size: 14px;
+    }
+
+    .toDoTaskWrapper {
+      margin-top: 15px;
+    }
+
+    .toDoItem {
+      width: 450px;
+      height: 45px;
+      border-radius: 0 15px;
+      margin-bottom: 20px;
+      box-shadow: 7px 6px 12px rgba(0, 0, 0, .15), 0 8px 24px rgba(0, 0, 0, .15);
+
+      .checkboxCompleteTask {
+        .checkbox-other .customCheckbox {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .taskDescription {
+        font-size: 12px;
+      }
+
+      .btnDelete {
+        font-size: 7px;
+        letter-spacing: 1.8px;
+        border-radius: 0 15px;
+      }
+
+      .btnDelete:active {
+        font-size: 4px;
+      }
+    }
+
+    .toDoItem.checked {
+      margin-left: 6.5px;
+      width: 435px;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  header {
+    height: 35px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .15);
+
+    .mainTitle {
+      font-size: 17px;
+      top: 9px;
+    }
+  }
+
+  .addToDoArea {
+    width: 300px;
+    padding: 8px 8px;
+    grid-gap: 5px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, .15), 0 5px 12px rgba(0, 0, 0, .15);
+
+    .inputWrapper input {
+      height: 21px;
+      width: 210px;
+      font-size: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .buttonWrapper button {
+      height: 25px;
+      font-size: 6px;
+      letter-spacing: 1px;
+      padding-left: 8px;
+    }
+
+    .buttonWrapper button:hover {
+      font-size: 6px;
+      letter-spacing: 1px;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+
+    .buttonWrapper button:active {
+      font-size: 5px;
+      border: 3px solid black;
+      color:black;
+      background-color: rgb(53, 224, 53);
+    }
+  }
+
+  .tasksArea {
+    margin-top: 10px;
+
+    .title {
+      font-size: 10px;
+      letter-spacing: 1.3px;
+    }
+
+    .toDoTaskWrapper {
+      margin-top: 15px;
+    }
+
+    .toDoItem {
+      width: 316px;
+      height: 30px;
+      border-radius: 0 10px;
+      box-shadow: 5px 5px 6px rgba(0, 0, 0, .15), 0 5px 12px rgba(0, 0, 0, .15);
+
+      .checkboxCompleteTask {
+        padding-top: 4px;
+        .checkbox-other .customCheckbox {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .taskDescription {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      .btnDelete {
+        font-size: 5px;
+        letter-spacing: 1.3px;
+        border-radius: 0 10px;
+      }
+
+      .btnDelete:active {
+        font-size: 4px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .toDoItem.checked {
+      margin-left: 8px;
+      width: 305px;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
