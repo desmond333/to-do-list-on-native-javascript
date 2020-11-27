@@ -3,7 +3,7 @@ const addTaskBtn = document.querySelector(".addTask");
 const toDoTaskDiv = document.querySelector(".toDoTaskWrapper");
 
 let tasks;
-!localStorage.tasks ? tasks = [] : (tasks = JSON.parse(localStorage.getItem("tasks"))) //для того, чтобы добавить новую задачу в массив задач, не теряя при этом старые (актуально при перезагрузке страницы)
+(!localStorage.tasks) ? (tasks = []) : (tasks = JSON.parse(localStorage.getItem("tasks"))) //для того, чтобы добавить новую задачу в массив задач, не теряя при этом старые (актуально при перезагрузке страницы)
 
 function Task(descriptionTask) { //с помощью f конструктора создаём однотипные объекты
     this.descriptionTask = descriptionTask;
@@ -33,10 +33,17 @@ let createTemplate = (task, index) => { //item = task
 
 let toDoItemElements = []; //массив для уже созданных задач
 
+let filterTasks = () => {
+    const activeTasks = tasks.length && tasks.filter(item => item.completed == false);
+    const completedTasks = tasks.length && tasks.filter(item => item.completed == true);
+    tasks = [...activeTasks, ...completedTasks];
+}
+
 let fillHtmlList = () => {
     toDoTaskDiv.innerHTML = ""; //очищаем содержимое главного div каждой задачи
     if (tasks.length > 0) { //если массив задач не пустой
-        tasks.forEach((item, index) => {
+        filterTasks(); //преображаем массив tasks
+        tasks.forEach((item, index) => { //пробегаемся по преображённому массиву tasks
             toDoTaskDiv.innerHTML += createTemplate(item, index); //на каждой итерации цикла добавляем в содержимое toDoItem шаблон с разными item и index
         });
         toDoItemElements = document.querySelectorAll('.toDoItem'); //для f completeTask добавляем в массив уже созданные toDoItem
@@ -52,8 +59,10 @@ let completeTask = index => {
     } else {
         toDoItemElements[index].classList.remove("checked");
     }
-    updateLocalStorage();
-    console.log(tasks[index]);
+    setTimeout(() => {
+        updateLocalStorage();
+        fillHtmlList();
+    }, 700);
 }
 
 let deleteTask = index => {
@@ -66,8 +75,10 @@ let deleteTask = index => {
 }
 
 addTaskBtn.addEventListener("click", () => {
-    tasks.push(new Task(deskTaskInp.value)); //по клику создаем новый объект в массиве tasks, в который передаём то, что ввёл пользователь
-    updateLocalStorage();
-    fillHtmlList(); //заполняет div одинаковыми объектами из массива tasks или lS
-    deskTaskInp.value = ""; //зачищаем инпут каждый раз
+    if (deskTaskInp.value.length >= 5 && deskTaskInp.value.length <= 35) { //Описание задачи от a и до b символов
+        tasks.push(new Task(deskTaskInp.value)); //по клику создаем новый объект в массиве tasks, в который передаём то, что ввёл пользователь
+        updateLocalStorage();
+        fillHtmlList(); //заполняет div одинаковыми объектами из массива tasks или lS
+        deskTaskInp.value = ""; //зачищаем инпут каждый раз
+    }
 });
