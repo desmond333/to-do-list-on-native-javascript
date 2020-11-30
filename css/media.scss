@@ -193,20 +193,20 @@
   }
 
   .addToDoArea {
-    width: 350px;
+    width: 310px;
     padding: 8px 8px;
     grid-gap: 5px;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
 
     .inputWrapper input {
       height: 25px;
-      width: 250px;
+      width: 215px;
       font-size: 11px;
       letter-spacing: 0.5px;
     }
 
     .buttonWrapper button {
-      height: 28.5px;
+      height: 29px;
       font-size: 8px;
       letter-spacing: 1px;
       padding-left: 8px;
@@ -241,13 +241,13 @@
     }
 
     .toDoItem {
-      width: 366px;
+      width: 325px;
       height: 40px;
       border-radius: 0 10px;
       box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
 
       .checkboxCompleteTask {
-        padding-top: 4px;
+        padding-top: 3px;
         .checkbox-other .customCheckbox {
           width: 12px;
           height: 12px;
@@ -261,9 +261,10 @@
       }
 
       .btnDelete {
-        font-size: 8px;
-        letter-spacing: 1.3px;
+        font-size: 6px;
+        letter-spacing: 1.2px;
         border-radius: 0 10px;
+        width: 45px;
       }
 
       .btnDelete:active {
@@ -273,13 +274,20 @@
     }
 
     .toDoItem.checked {
-      margin-left: 5px;
-      width: 355px;
+      margin-left: 3px;
+      width: 320px;
       .taskDescription{
         font-size: 11px;
       }
       .btnDelete {
-        font-size: 7px;
+        font-size: 5.5px;
+      }
+      .checkboxCompleteTask {
+        padding-top: 4px;
+        .checkbox-other .customCheckbox {
+          width: 10px;
+          height: 10px;
+        }
       }
     }
   }

@@ -75,7 +75,7 @@ let deleteTask = index => {
 }
 
 addTaskBtn.addEventListener("click", () => {
-    if (deskTaskInp.value.length >= 5 && deskTaskInp.value.length <= 35) { //Описание задачи от a и до b символов
+    if (deskTaskInp.value.length >= 5 && deskTaskInp.value.length <= 30) { //Описание задачи от a и до b символов
         tasks.push(new Task(deskTaskInp.value)); //по клику создаем новый объект в массиве tasks, в который передаём то, что ввёл пользователь
         updateLocalStorage();
         fillHtmlList(); //заполняет div одинаковыми объектами из массива tasks или lS

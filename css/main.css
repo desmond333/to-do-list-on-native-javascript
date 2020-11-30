@@ -466,7 +466,7 @@ header .mainTitle {
     top: 9px;
   }
   .addToDoArea {
-    width: 350px;
+    width: 310px;
     padding: 8px 8px;
     grid-gap: 5px;
     -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
@@ -474,12 +474,12 @@ header .mainTitle {
   }
   .addToDoArea .inputWrapper input {
     height: 25px;
-    width: 250px;
+    width: 215px;
     font-size: 11px;
     letter-spacing: 0.5px;
   }
   .addToDoArea .buttonWrapper button {
-    height: 28.5px;
+    height: 29px;
     font-size: 8px;
     letter-spacing: 1px;
     padding-left: 8px;
@@ -508,14 +508,14 @@ header .mainTitle {
     margin-top: 20px;
   }
   .tasksArea .toDoItem {
-    width: 366px;
+    width: 325px;
     height: 40px;
     border-radius: 0 10px;
     -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
             box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
   }
   .tasksArea .toDoItem .checkboxCompleteTask {
-    padding-top: 4px;
+    padding-top: 3px;
   }
   .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox {
     width: 12px;
@@ -527,23 +527,31 @@ header .mainTitle {
     width: 250px;
   }
   .tasksArea .toDoItem .btnDelete {
-    font-size: 8px;
-    letter-spacing: 1.3px;
+    font-size: 6px;
+    letter-spacing: 1.2px;
     border-radius: 0 10px;
+    width: 45px;
   }
   .tasksArea .toDoItem .btnDelete:active {
     font-size: 4px;
     letter-spacing: 1px;
   }
   .tasksArea .toDoItem.checked {
-    margin-left: 5px;
-    width: 355px;
+    margin-left: 3px;
+    width: 320px;
   }
   .tasksArea .toDoItem.checked .taskDescription {
     font-size: 11px;
   }
   .tasksArea .toDoItem.checked .btnDelete {
-    font-size: 7px;
+    font-size: 5.5px;
+  }
+  .tasksArea .toDoItem.checked .checkboxCompleteTask {
+    padding-top: 4px;
+  }
+  .tasksArea .toDoItem.checked .checkboxCompleteTask .checkbox-other .customCheckbox {
+    width: 10px;
+    height: 10px;
   }
 }
 
