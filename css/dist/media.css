@@ -16,8 +16,8 @@
     padding: 10px 10px;
   }
   .addToDoArea .inputWrapper input {
-    height: 35px;
-    font-size: 13px;
+    height: 36px;
+    font-size: 15px;
   }
   .addToDoArea .buttonWrapper button {
     height: 39px;
@@ -61,6 +61,9 @@
     margin-left: 10px;
     width: 600px;
   }
+  .tasksArea .toDoItem.checked .taskDescription {
+    font-size: 14px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -81,7 +84,7 @@
   }
   .addToDoArea .inputWrapper input {
     height: 31px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .addToDoArea .buttonWrapper button {
     height: 34px;
@@ -90,12 +93,18 @@
     padding-left: 8px;
   }
   .addToDoArea .buttonWrapper button:hover {
+    font-size: 9px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+  .addToDoArea .buttonWrapper button:active {
     font-size: 8px;
     letter-spacing: 1.7px;
     border: 1px solid black;
-  }
-  .addToDoArea .buttonWrapper button:active {
-    font-size: 5px;
+    background-color: #35e035;
+    color: black;
   }
 
   .tasksArea {
@@ -111,7 +120,7 @@
     width: 450px;
     height: 45px;
     border-radius: 0 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     box-shadow: 7px 6px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox {
@@ -133,6 +142,9 @@
     margin-left: 6.5px;
     width: 435px;
   }
+  .tasksArea .toDoItem.checked .taskDescription {
+    font-size: 10px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -146,19 +158,19 @@
   }
 
   .addToDoArea {
-    width: 350px;
+    width: 310px;
     padding: 8px 8px;
     grid-gap: 5px;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
   }
   .addToDoArea .inputWrapper input {
     height: 25px;
-    width: 250px;
-    font-size: 10px;
+    width: 215px;
+    font-size: 11px;
     letter-spacing: 0.5px;
   }
   .addToDoArea .buttonWrapper button {
-    height: 28.5px;
+    height: 29px;
     font-size: 8px;
     letter-spacing: 1px;
     padding-left: 8px;
@@ -188,13 +200,13 @@
     margin-top: 20px;
   }
   .tasksArea .toDoItem {
-    width: 366px;
+    width: 325px;
     height: 40px;
     border-radius: 0 10px;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.15);
   }
   .tasksArea .toDoItem .checkboxCompleteTask {
-    padding-top: 4px;
+    padding-top: 3px;
   }
   .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox {
     width: 12px;
@@ -203,19 +215,34 @@
   .tasksArea .toDoItem .taskDescription {
     font-size: 12px;
     letter-spacing: 0.5px;
+    width: 250px;
   }
   .tasksArea .toDoItem .btnDelete {
-    font-size: 8px;
-    letter-spacing: 1.3px;
+    font-size: 6px;
+    letter-spacing: 1.2px;
     border-radius: 0 10px;
+    width: 45px;
   }
   .tasksArea .toDoItem .btnDelete:active {
     font-size: 4px;
     letter-spacing: 1px;
   }
   .tasksArea .toDoItem.checked {
-    margin-left: 8px;
-    width: 305px;
+    margin-left: 3px;
+    width: 320px;
+  }
+  .tasksArea .toDoItem.checked .taskDescription {
+    font-size: 11px;
+  }
+  .tasksArea .toDoItem.checked .btnDelete {
+    font-size: 5.5px;
+  }
+  .tasksArea .toDoItem.checked .checkboxCompleteTask {
+    padding-top: 4px;
+  }
+  .tasksArea .toDoItem.checked .checkboxCompleteTask .checkbox-other .customCheckbox {
+    width: 10px;
+    height: 10px;
   }
 }
 /* Custom, iPhone Retina */

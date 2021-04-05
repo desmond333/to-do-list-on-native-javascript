@@ -10,7 +10,7 @@ button:focus, input:focus {
 header {
   position: relative;
   height: 65px;
-  margin-bottom: 20px;
+  margin-bottom: 10vh;
   /*background-color: #EDE868;*/
   /*background: #1F2833;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
@@ -20,10 +20,9 @@ header {
   background-size: cover;
   text-align: center;
 }
-
 header .mainTitle {
   color: #EDEDED;
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   font-size: 40px;
   left: 0%;
   right: 0%;
@@ -35,40 +34,38 @@ header .mainTitle {
   -webkit-animation: move linear 2000ms infinite;
           animation: move linear 2000ms infinite;
 }
-
 @-webkit-keyframes move {
   0% {
-    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
+    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
   }
   25% {
-    text-shadow: -4px -4px 0 black, -3px -3px 0 black, -2px -2px 0 black, -1px -1px 0 black, 4px 4px 0 gray, 3px 3px 0 gray, 2px 2px 0 gray, 1px 1px 0 gray;
+    text-shadow: -4px -4px 0 black, -3px -3px 0 black, -2px -2px 0 black, -1px -1px 0 black, 4px 4px 0 gray, 3px 3px 0 gray, 2px 2px 0 gray, 1px 1px 0 gray;
   }
   50% {
-    text-shadow: -4px 4px 0 gray, -3px 3px 0 gray, -2px 2px 0 gray, -1px 1px 0 gray, 4px -4px 0 black, 3px -3px 0 black, 2px -2px 0 black, 1px -1px 0 black;
+    text-shadow: -4px 4px 0 gray, -3px 3px 0 gray, -2px 2px 0 gray, -1px 1px 0 gray, 4px -4px 0 black, 3px -3px 0 black, 2px -2px 0 black, 1px -1px 0 black;
   }
   75% {
-    text-shadow: 4px 4px 0 black, 3px 3px 0 black, 2px 2px 0 black, 1px 1px 0 black, -4px -4px 0 gray, -3px -3px 0 gray, -2px -2px 0 gray, -1px -1px 0 gray;
+    text-shadow: 4px 4px 0 black, 3px 3px 0 black, 2px 2px 0 black, 1px 1px 0 black, -4px -4px 0 gray, -3px -3px 0 gray, -2px -2px 0 gray, -1px -1px 0 gray;
   }
   100% {
-    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
+    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
   }
 }
-
 @keyframes move {
   0% {
-    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
+    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
   }
   25% {
-    text-shadow: -4px -4px 0 black, -3px -3px 0 black, -2px -2px 0 black, -1px -1px 0 black, 4px 4px 0 gray, 3px 3px 0 gray, 2px 2px 0 gray, 1px 1px 0 gray;
+    text-shadow: -4px -4px 0 black, -3px -3px 0 black, -2px -2px 0 black, -1px -1px 0 black, 4px 4px 0 gray, 3px 3px 0 gray, 2px 2px 0 gray, 1px 1px 0 gray;
   }
   50% {
-    text-shadow: -4px 4px 0 gray, -3px 3px 0 gray, -2px 2px 0 gray, -1px 1px 0 gray, 4px -4px 0 black, 3px -3px 0 black, 2px -2px 0 black, 1px -1px 0 black;
+    text-shadow: -4px 4px 0 gray, -3px 3px 0 gray, -2px 2px 0 gray, -1px 1px 0 gray, 4px -4px 0 black, 3px -3px 0 black, 2px -2px 0 black, 1px -1px 0 black;
   }
   75% {
-    text-shadow: 4px 4px 0 black, 3px 3px 0 black, 2px 2px 0 black, 1px 1px 0 black, -4px -4px 0 gray, -3px -3px 0 gray, -2px -2px 0 gray, -1px -1px 0 gray;
+    text-shadow: 4px 4px 0 black, 3px 3px 0 black, 2px 2px 0 black, 1px 1px 0 black, -4px -4px 0 gray, -3px -3px 0 gray, -2px -2px 0 gray, -1px -1px 0 gray;
   }
   100% {
-    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
+    text-shadow: 4px -4px 0 gray, 3px -3px 0 gray, 2px -2px 0 gray, 1px -1px 0 gray, -4px 4px 0 black, -3px 3px 0 black, -2px 2px 0 black, -1px 1px 0 black;
   }
 }
 
@@ -76,7 +73,6 @@ header .mainTitle {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
-  display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -86,10 +82,8 @@ header .mainTitle {
 }
 
 .addToDoArea {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6fr 2fr;
-      grid-template-columns: 6fr 2fr;
+  grid-template-columns: 6fr 2fr;
   grid-gap: 30px;
   width: 700px;
   background-color: #ffffff;
@@ -102,7 +96,6 @@ header .mainTitle {
   -webkit-box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15), 0 10px 32px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15), 0 10px 32px rgba(0, 0, 0, 0.15);
 }
-
 .addToDoArea .inputWrapper input {
   width: 100%;
   height: 42px;
@@ -110,10 +103,9 @@ header .mainTitle {
   border-radius: 8px;
   font-weight: bold;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 5px;
 }
-
 .addToDoArea .buttonWrapper button {
   width: 100%;
   height: 45px;
@@ -123,15 +115,14 @@ header .mainTitle {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   text-align: center;
   padding-left: 18px;
   border: none;
 }
-
 .addToDoArea .buttonWrapper button:hover {
   background: #0ee018;
   font-size: 15px;
@@ -139,7 +130,6 @@ header .mainTitle {
   color: black;
   cursor: pointer;
 }
-
 .addToDoArea .buttonWrapper button:active {
   font-size: 9px;
   letter-spacing: 1.7px;
@@ -150,25 +140,20 @@ header .mainTitle {
   margin-top: 40px;
   text-align: center;
 }
-
 .tasksArea .title {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 22px;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   letter-spacing: 3px;
   color: black;
 }
-
 .tasksArea .toDoTaskWrapper {
   margin-top: 30px;
 }
-
 .tasksArea .toDoItem {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 7fr 1.5fr;
-      grid-template-columns: 1fr 7fr 1.5fr;
+  grid-template-columns: 1fr 7fr 1.5fr;
   height: 65px;
   width: 760px;
   -webkit-box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.15), 0 10px 32px rgba(0, 0, 0, 0.15);
@@ -178,9 +163,7 @@ header .mainTitle {
   -webkit-transition: all 0.6s linear 0s;
   transition: all 0.6s linear 0s;
 }
-
 .tasksArea .toDoItem .checkboxCompleteTask {
-  display: -ms-grid;
   display: grid;
   height: 100%;
   width: 100%;
@@ -192,12 +175,10 @@ header .mainTitle {
   /* Checked */
   /* Hover */
 }
-
 .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other {
   display: block;
   line-height: 22px;
 }
-
 .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -214,28 +195,23 @@ header .mainTitle {
   background-size: 100%;
   cursor: pointer;
 }
-
 .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox:checked {
   background-image: url(./../img/checkBox2.png);
 }
-
 .tasksArea .toDoItem .checkboxCompleteTask .checkbox-other .customCheckbox:hover {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
 }
-
 .tasksArea .toDoItem .taskDescription {
-  display: -ms-grid;
   display: grid;
   font-weight: bold;
   font-size: 20px;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   letter-spacing: 1px;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: left;
 }
-
 .tasksArea .toDoItem .btnDelete {
   background-color: #ec2933;
   height: 100%;
@@ -246,16 +222,14 @@ header .mainTitle {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 15px;
   text-align: center;
 }
-
 .tasksArea .toDoItem .btnDelete:active {
   font-size: 12px;
 }
-
 .tasksArea .toDoItem.checked {
   margin-left: 10px;
   width: 740px;
@@ -266,17 +240,14 @@ header .mainTitle {
   -webkit-transition: all 0.6s linear 0s;
   transition: all 0.6s linear 0s;
 }
-
 .tasksArea .toDoItem.checked .taskDescription {
   text-decoration: line-through;
   font-size: 18px;
 }
-
 .tasksArea .toDoItem.delition {
   -webkit-animation: opacity 2s linear;
           animation: opacity 2s linear;
 }
-
 @-webkit-keyframes opacity {
   from {
     display: block;
@@ -290,7 +261,6 @@ header .mainTitle {
     display: none;
   }
 }
-
 @keyframes opacity {
   from {
     display: block;
@@ -316,6 +286,7 @@ header .mainTitle {
     font-size: 32px;
     top: 8px;
   }
+
   .addToDoArea {
     width: 600px;
     grid-gap: 20px;
@@ -338,6 +309,7 @@ header .mainTitle {
   .addToDoArea .buttonWrapper button:active {
     font-size: 7px;
   }
+
   .tasksArea {
     margin-top: 35px;
   }
@@ -370,7 +342,6 @@ header .mainTitle {
     font-size: 14px;
   }
 }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   header {
@@ -382,6 +353,7 @@ header .mainTitle {
     font-size: 25px;
     top: 10px;
   }
+
   .addToDoArea {
     width: 430px;
     grid-gap: 20px;
@@ -413,6 +385,7 @@ header .mainTitle {
     background-color: #35e035;
     color: black;
   }
+
   .tasksArea {
     margin-top: 20px;
   }
@@ -453,7 +426,6 @@ header .mainTitle {
     font-size: 10px;
   }
 }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   header {
@@ -465,6 +437,7 @@ header .mainTitle {
     font-size: 20px;
     top: 9px;
   }
+
   .addToDoArea {
     width: 310px;
     padding: 8px 8px;
@@ -497,6 +470,7 @@ header .mainTitle {
     color: black;
     background-color: #35e035;
   }
+
   .tasksArea {
     margin-top: 30px;
   }
@@ -554,7 +528,6 @@ header .mainTitle {
     height: 10px;
   }
 }
-
 /* Custom, iPhone Retina */
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
