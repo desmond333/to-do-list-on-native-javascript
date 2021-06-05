@@ -10,4 +10,4 @@
 
 ### You can run this project locally, just open `index.html` in browser.
 
-![todolist](https://user-images.githubusercontent.com/67102520/115438389-00b87180-a216-11eb-9bdb-dcf175340338.png)
+![todo_list_native_js](https://user-images.githubusercontent.com/67102520/120905802-4792e700-c65d-11eb-8d2c-eaa8fcf3b505.gif)
